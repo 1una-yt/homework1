@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>拓元售票系統 - 系統維護中</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <div class="logo">
+            <img src="https://tixcraft.com/images/logo.svg" alt="拓元售票系統標誌">
+        </div>
+    </header>
+
+    <main>
+        <div class="maintenance-card">
+            <div class="icon-container">
+                <i class="fas fa-ticket-alt maintenance-icon"></i>
+            </div>
+            <h1>系統繁忙中，請稍候重試</h1>
+            <div class="progress-container">
+                <div class="progress-bar"></div>
+            </div>
+            <p class="status-message">目前有大量用戶同時訪問，系統正在全力處理請求</p>
+            <div class="info-container">
+                <div class="info-box">
+                    <i class="fas fa-clock"></i>
+                    <p>自動刷新時間：<span id="refresh-time">30秒後</span></p>
+                </div>
+                <div class="info-box">
+                    <i class="fas fa-shield-alt"></i>
+                    <p>購票資訊已暫存在系統</p>
+                </div>
+                <div class="info-box">
+                    <i class="fas fa-headset"></i>
+                    <p>客服信箱：<a href="mailto:service@tixcraft.com">service@tixcraft.com</a></p>
+                </div>
+            </div>
+
+            <div class="queue-status">
+                <h2>您目前的排隊狀態</h2>
+                <div class="queue-info">
+                    <div class="queue-number">
+                        <i class="fas fa-users"></i>
+                        <div>
+                            <p>目前排隊人數</p>
+                            <span class="number">4,328</span>
+                        </div>
+                    </div>
+                    <div class="estimated-time">
+                        <i class="fas fa-hourglass-half"></i>
+                        <div>
+                            <p>預估等待時間</p>
+                            <span class="number">15-20分鐘</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="tips-container">
+                    <h3><i class="fas fa-lightbulb"></i> 購票小提示</h3>
+                    <ul>
+                        <li>請勿重複開啟多個視窗，這會使您的排隊順序後置</li>
+                        <li>頁面會自動刷新，請勿手動重新整理</li>
+                        <li>成功進入選位頁後，您將有10分鐘的選位時間</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 拓元售票系統 TIXCRAFT</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-line"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
